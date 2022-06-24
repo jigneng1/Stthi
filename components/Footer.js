@@ -4,7 +4,7 @@ const Footer = () => {
     <Fragment>
       <div className="box">
         <div className="content">
-          All right reserved © by "Sitiporn Wimolpunyakul"
+         {`All right reserved © by "Sitiporn Wimolpunyakul"`}
         </div>
       </div>
       
