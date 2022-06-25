@@ -45,13 +45,13 @@ const About = () => {
 
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
-                    - I’ m a sophomore student in Computer Science at King
-                     Mongkut's University of Technology Thonburi (KMUTT)
+                    {`- I’ m a sophomore student in Computer Science at King
+                     Mongkut's University of Technology Thonburi (KMUTT)`}
                   </p>
                 </div>
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
-                    - I'm a full-stack developer who is interested in web ,algorithms and networks
+                    {`- I'm a full-stack developer who is interested in web ,algorithms and networks`}
                   </p>
                 </div>
               </div>
@@ -81,10 +81,10 @@ const About = () => {
                   </div>
 
                   <div className="card" style={{ marginTop: "2rem" }}>
-                    <p>King Mongkut's University of Technology Thonburi</p>
+                    <p>{`King Mongkut's University of Technology Thonburi`}</p>
 
                     <p>2021 - Present</p>
-                    <p>I'm currently studying bachelor's second year of</p>
+                    <p>{`I'm currently studying bachelor's second year of`}</p>
                     <p>Computer Science at School of Information Technology</p>
                     <p>Current GPAX : 3.25</p>
                   </div>
