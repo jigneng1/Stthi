@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 import Layout from "../../components/Layout";
-import Typing from "../../components/typing";
+import Typing from "../../components/Typing";
 import Footer from "../../components/Footer";
 import Link from "next/link";
 
