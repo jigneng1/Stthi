@@ -21,7 +21,7 @@ const Footer = () => {
           letter-spacing: 2px;
           text-align: center;
         }
-        @media only screen and (max-width: 720px) {
+        @media only screen and (max-width: 1024px) {
           .content {
             font-weight: 400;
             font-size: 12px;

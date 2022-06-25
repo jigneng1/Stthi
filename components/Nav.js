@@ -56,7 +56,7 @@ const Nav = ({ page }) => {
             align-items: center;
           }
           #fontNav {
-            font-size: 70%;
+            font-size: 100%;
           }
         }
       `}</style>
