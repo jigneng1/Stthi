@@ -56,8 +56,8 @@ const Skills = ({ id }) => {
               <div key={index}>
                 <div className="rowfront">
                   {i.icons.map((s, i) => (
-                    <div>
-                      <div className="column" key={i}>
+                    <div key={i}>
+                      <div className="column" >
                         {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon1"></img>
                         ) : (
@@ -149,8 +149,8 @@ const Skills = ({ id }) => {
               <div key={index}>
                 <div className="row">
                   {i.icons.map((s, i) => (
-                    <div>
-                      <div className="column" key={i}>
+                    <div  key={i}>
+                      <div className="column">
 
                         {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon"></img>
@@ -245,8 +245,8 @@ const Skills = ({ id }) => {
               <div key={index}>
                 <div className="row">
                   {i.icons.map((s, i) => (
-                    <div>
-                      <div className="column" key={i}>
+                    <div key={i}>
+                      <div className="column" >
                         {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon"></img>
                         ) : (
@@ -339,10 +339,10 @@ const Skills = ({ id }) => {
               <div key={index}>
                 <div className="row">
                   {i.icons.map((s, i) => (
-                    <div>
+                    <div key={i}>
                       <div
                         className="column"
-                        key={i}
+                        
                         style={{ margin: "15px" }}
                       >
                         <img src={`${s.icon}`} className="icon"></img>
