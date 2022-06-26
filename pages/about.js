@@ -1,6 +1,6 @@
 import { Fragment} from "react";
 import Layout from "../components/Layout";
-import Skills from "../components/skills";
+import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 
 const About = () => {
