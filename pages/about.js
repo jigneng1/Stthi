@@ -1,8 +1,7 @@
 import { Fragment} from "react";
 import Layout from "../components/Layout";
-// import Skills from "../component/skills";
+import Skills from "../components/skills";
 import Footer from "../components/Footer";
-// import style from "../styles/about";
 
 const About = () => {
   return (
@@ -15,11 +14,16 @@ const About = () => {
               <div className="column-con">
                 <div>
                   <div>
-                    {/* <h1 className="text" style={{ margin: "20px 0px 0px 0px" }}>
+                    <h1 className="text" style={{ margin: "20px 0px 0px 0px" }}>
                       Hello, 🥝{"   "}
-                    </h1> */}
+                    </h1>
                     <div className="row-con">
-                      
+                      <h1
+                        className="text"
+                        style={{ margin: "20px 0px 0px 0px" }}
+                      >
+                        I’m{" "}
+                      </h1>
                       <h1
                         className="text"
                         style={{
@@ -32,12 +36,6 @@ const About = () => {
                         {" "}
                         Sitiporn Wimolpunyakul
                       </h1>
-                      {/* <h1
-                        className="text"
-                        style={{ margin: "20px 0px 0px 0px" }}
-                      >
-                        I’m{" "}
-                      </h1> */}
                     </div>
                   </div>
                 </div>
@@ -45,13 +43,13 @@ const About = () => {
 
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
-                    {`- I’ m a sophomore student in Computer Science at King
-                     Mongkut's University of Technology Thonburi (KMUTT)`}
+                    - I’ m a sophomore student in Computer Science at King
+                    Mongkut's University of Technology Thonburi (KMUTT)
                   </p>
                 </div>
                 <div className="typing">
                   <p style={{ color: "#7B7B7B" }}>
-                    {`- I'm a full-stack developer who is interested in web ,algorithms and networks`}
+                    - I'm a full-stack developer who is interested in web,lgorithma and Networks
                   </p>
                 </div>
               </div>
@@ -81,10 +79,10 @@ const About = () => {
                   </div>
 
                   <div className="card" style={{ marginTop: "2rem" }}>
-                    <p>{`King Mongkut's University of Technology Thonburi`}</p>
+                    <p>King Mongkut's University of Technology Thonburi</p>
 
                     <p>2021 - Present</p>
-                    <p>{`I'm currently studying bachelor's second year of`}</p>
+                    <p>I'm currently studying bachelor's second year of</p>
                     <p>Computer Science at School of Information Technology</p>
                     <p>Current GPAX : 3.25</p>
                   </div>
@@ -118,7 +116,7 @@ const About = () => {
                         Development
                       </h3>
                     </div>
-                    {/* <Skills id={"font"}></Skills> */}
+                    <Skills id={"font"}></Skills>
                   </div>
                   <br />
                   <div className="card1">
@@ -135,7 +133,7 @@ const About = () => {
                         Development
                       </h3>
                     </div>
-                    {/* <Skills id={"back"}></Skills> */}
+                    <Skills id={"back"}></Skills>
                   </div>
                   <br />
                   <div className="card1">
@@ -152,7 +150,7 @@ const About = () => {
                         Development
                       </h3>
                     </div>
-                    {/* <Skills id={"tools"} /> */}
+                    <Skills id={"tools"} />
                   </div>
                   <br />
                   <div className="card1">
@@ -169,7 +167,7 @@ const About = () => {
                         Skills
                       </h3>
                     </div>
-                    {/* <Skills id={"design"} /> */}
+                    <Skills id={"design"} />
                   </div>
                 </div>
               </div>
@@ -315,7 +313,7 @@ const About = () => {
               opacity: 100%;
             }
           }
-          @media only screen and (max-width: 1024px) {
+          @media only screen and (max-width: 768px) {
             .typing {
               width: 300px;
               display: flex;

@@ -48,7 +48,7 @@ const Nav = ({ page }) => {
           align-items: center;
           margin-right: 20px;
         }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1024px) {
           .container {
             display: flex;
             flex-direction: row;

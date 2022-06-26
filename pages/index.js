@@ -24,7 +24,7 @@ const General = (props) => {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []);
-  const isMobile = windowSize.width < 768;
+  const isMobile = windowSize.width < 1024;
   return (
     <Fragment>
       <div className="container">
