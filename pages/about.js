@@ -313,7 +313,7 @@ const About = () => {
               opacity: 100%;
             }
           }
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 1024px) {
             .typing {
               width: 300px;
               display: flex;
