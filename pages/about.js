@@ -84,7 +84,7 @@ const About = () => {
                     <p>2021 - Present</p>
                     <p>{`I'm currently studying bachelor's second year of`}</p>
                     <p>Computer Science at School of Information Technology</p>
-                    <p>Current GPAX : 3.52</p>
+                    <p>Current GPAX : 3.5</p>
                   </div>
                 </div>
                 <div className="container-card">
@@ -238,7 +238,7 @@ const About = () => {
             border: none;
             box-shadow: 3px 3px 5px 3px #ccc;
             flex-direction: column;
-            flex-wrap:wrap;
+            flex-wrap:nowrap;
           }
           .motion {
             position: relative;
@@ -341,7 +341,7 @@ const About = () => {
             }
             .text {
               text-align: center;
-              font-size: 2rem;
+              font-size: 1.5rem;
             }
             .container {
               height: 100%;

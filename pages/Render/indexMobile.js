@@ -101,7 +101,8 @@ const Home = () => {
       <style jsx>{`
          .profilePic {
           border-radius: 50%;
-          width: 250px;
+          width: 350px;
+          height: auto;
           margin: 30px;
         }
          .line {
@@ -141,9 +142,9 @@ const Home = () => {
           right: 1;
         }
         .container {
-          min-height: 85vh;
+          min-height: 70vh;
           display: flex;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: center;
           flex-direction: column;
         }
