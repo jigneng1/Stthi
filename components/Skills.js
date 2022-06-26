@@ -113,7 +113,7 @@ const Skills = ({ id }) => {
                 font-size: 13px;
                 font-weight: 500;
               }
-              @media only screen and (max-width: 768px) {
+              @media only screen and (max-width: 1024px) {
                 i {
                   color: #d18585;
                   font-size: 25px;
@@ -208,7 +208,7 @@ const Skills = ({ id }) => {
                 font-size: 13px;
                 font-weight: 500;
               }
-              @media only screen and (max-width: 768px) {
+              @media only screen and (max-width: 1024px) {
                 i {
                   color: #d18585;
                   font-size: 25px;
@@ -302,7 +302,7 @@ const Skills = ({ id }) => {
                 font-size: 13px;
                 font-weight: 500;
               }
-              @media only screen and (max-width: 768px) {
+              @media only screen and (max-width: 1024px) {
                 i {
                   color: #d18585;
                   font-size: 25px;
@@ -396,7 +396,7 @@ const Skills = ({ id }) => {
                 font-size: 13px;
                 font-weight: 500;
               }
-              @media only screen and (max-width: 768px) {
+              @media only screen and (max-width: 1024px) {
                 i {
                   color: #d18585;
                   font-size: 25px;

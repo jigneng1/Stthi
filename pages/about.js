@@ -84,7 +84,7 @@ const About = () => {
                     <p>2021 - Present</p>
                     <p>{`I'm currently studying bachelor's second year of`}</p>
                     <p>Computer Science at School of Information Technology</p>
-                    <p>Current GPAX : 3.5</p>
+                    <p>Current GPAX : 3.52</p>
                   </div>
                 </div>
                 <div className="container-card">
