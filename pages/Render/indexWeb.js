@@ -30,7 +30,7 @@ const Home = () => {
                       >
                         I’m{" "}
                       </h1>
-                      <h1
+                      <div
                         className="text"
                         style={{
                           paddingLeft: "10px",
@@ -41,7 +41,7 @@ const Home = () => {
                       >
                         {" "}
                         <Typing></Typing>
-                      </h1>
+                      </div>
                     </div>
                   </div>
                 </div>

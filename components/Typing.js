@@ -24,7 +24,7 @@ const Typing = ({}) => {
             width: 0;
           }
           to {
-            width: 10.8em;
+            width: 11em;
           }
         }
         @keyframes blinkTextCursor {
