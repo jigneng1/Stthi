@@ -24,9 +24,8 @@ function Experience() {
         <Layout page="experiences">
           <div className="container">
             <h1>Showcase</h1>
-            <p style={{ fontWeight: "500", color: "#4F4F4F" }}>-Minimal & simple are a passion of mine-</p>
-            <p style={{ color: "#4F4F4F" }}> I will try my best to create good quality and work</p>
-            <p style={{ color: "#4F4F4F" }}>The showcase composes of Development and Graphic design</p>
+            <p style={{ fontWeight: "500", color: "#4F4F4F" }}>-Good things, take time.-</p>
+            <p style={{ color: "#4F4F4F" }}>Writing code is as fun as playing music.</p>
             <div className="row">
               {items.map((item) => {
                 return (
@@ -72,7 +71,8 @@ function Experience() {
           button {
             border: none;
             background-color: white;
-             height: 30px;
+            color:black;
+            height: 30px;
             outline: none;
           }
           .row {
