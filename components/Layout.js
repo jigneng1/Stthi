@@ -1,7 +1,7 @@
 import {Fragment} from "react";
 import Header from "./Header";
 import Sidenav from "../components/Nav";
-const General = (props) => {
+const Layout = (props) => {
   return (
     <Fragment>
       <Header></Header>
@@ -21,4 +21,4 @@ const General = (props) => {
   );
 };
 
-export default General;
+export default Layout;
