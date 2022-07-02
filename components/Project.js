@@ -1,85 +1,85 @@
-import React, { Fragment } from 'react';
+import Link from "next/link";
+import React, { Fragment } from "react";
 function Project() {
-    const data=[
-        {
-            id:1,
-            intro:"graphic design & consulting",
-            content:
-              "A project that allows students to research and study to create services on a given topic, the 2021 topic is Homework Services.",
-            title: "🥇 SIT playground",
-            year: "2021",
-            img: "/assets/award/playground.png",
-            front: "",
-            back: "",
-            socket: "",
-            db: "",
-            link: "",
-            css: "",
-            site: "",
-            github: "",
-        },
-        {
-            id:2,
-            intro:"graphic design",
-            content:
-              "a volunteer project of the SIT faculty. I am in a design position to jointly make stories for the Foundation for the Blind.",
-            title: "SIT Volunteer 2021",
-            year: "2021",
-            img: "/assets/award/Sit vorunteer.jpg",
-            front: "",
-            back: "",
-            socket: "",
-            db: "",
-            link: "",
-            css: "",
-            site: "",
-            github: "",
-        }
+  const data = [
+    {
+      id: 1,
+      intro: "graphic design & consulting",
+      content:
+        "A project that allows students to research and study to create services on a given topic, the 2021 topic is Homework Services.",
+      title: "🥇 SIT playground",
+      year: "2021",
+      img: "/assets/award/playground.png",
+      front: "",
+      back: "",
+      socket: "",
+      db: "",
+      link: "experiences/playground",
+      css: "",
+      site: "",
+      github: "",
+    },
+    {
+      id: 2,
+      intro: "graphic design",
+      content:
+        "a volunteer project of the SIT faculty. I am in a design position to jointly make stories for the Foundation for the Blind.",
+      title: "SIT Volunteer 2021",
+      year: "2021",
+      img: "/assets/award/Sit vorunteer.jpg",
+      front: "",
+      back: "",
+      socket: "",
+      db: "",
+      link: "",
+      css: "",
+      site: "",
+      github: "",
+    },
+  ];
+  return (
+    <Fragment>
+      {data.map((item) => {
+        return (
+          <div key={item.id}>
+            <div className="row">
+              <div className="container">
+                <img
+                  src={item.img}
+                  style={{ width: "320px", borderRadius: "32px" }}
+                ></img>
 
-    ]
-    return(
-        <Fragment>
-            {data.map((item)=>{
-                return(
-                    <div key={item.id}>
-                    <div className="row">
-                      <div className="container">
-                        <img
-                          src={item.img}
-                          style={{ width:"320px", borderRadius: "32px", }}
-                        ></img>
+                <h3 className="font">{item.title}</h3>
+                <p>{item.year}</p>
 
-                        <h3 className="font">{item.title}</h3>
-                        <p>{item.year}</p>
+                <br />
+                <div className="hoverdiv">
+                  <div className="content">
+                    <h1>{item.title}</h1>
 
-                        <br />
-                        <div className="hoverdiv">
-                          <div className="content">
-                            <h1>{item.title}</h1>
-
-                            <h5> {item.intro}</h5>
-                            <p>{item.content}</p>
-                          </div>
-
-                          <button
-                            className="button"
-                          >
-                            <span
-                              style={{
-                                fontSize: "14px",
-                                backgroundColor: "transparent",
-                              }}
-                            >
-                              see more information
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                    <h5> {item.intro}</h5>
+                    <p>{item.content}</p>
                   </div>
-                )
-            })}
-                  <style jsx>{`
+
+                  <Link href={item.link}>
+                    <button className="button">
+                      <span
+                        style={{
+                          fontSize: "14px",
+                          backgroundColor: "transparent",
+                        }}
+                      >
+                        see more information
+                      </span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+      <style jsx>{`
         h1 {
           color: #333333;
         }
@@ -155,7 +155,7 @@ function Project() {
           flex-direction: row;
         }
       `}</style>
-        </Fragment>
-    );
+    </Fragment>
+  );
 }
 export default Project;
