@@ -6,10 +6,10 @@ function Contact() {
     <Fragment>
       <Layout page="contact">
         <div className="container">
-            <a href="https://www.facebook.com/jigneng1/" target="_blank"><img src="/assets/facebook.svg" alt="facebook" /></a>
-            <a href="https://www.instagram.com/n.neng_" target="_blank"><img src="/assets/Instagram.svg" alt="instragram" /></a>
-            <a href="https://github.com/jigneng1" target="_blank"><img src="/assets/Github-Dark.svg" alt="github" /></a>
-            <a href="https://www.linkedin.com/in/sitiporn-wimolpunyakul/" target="_blank"><img src="/assets/LinkedIn.svg" alt="linkin" /></a>
+            <a href="https://www.facebook.com/jigneng1/" target="_blank" rel="noreferrer"><img src="/assets/facebook.svg" alt="facebook" /></a>
+            <a href="https://www.instagram.com/n.neng_" target="_blank" rel="noreferrer"><img src="/assets/Instagram.svg" alt="instragram" /></a>
+            <a href="https://github.com/jigneng1" target="_blank" rel="noreferrer"><img src="/assets/Github-Dark.svg" alt="github" /></a>
+            <a href="https://www.linkedin.com/in/sitiporn-wimolpunyakul/" target="_blank" rel="noreferrer"><img src="/assets/LinkedIn.svg" alt="linkin" /></a>
             <a href="mailto:jigneng1@gmail.com"><img src="/assets/Mail.svg" alt="mail" /></a>
         </div>
       </Layout>
