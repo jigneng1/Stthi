@@ -1,4 +1,4 @@
-import { Fragment} from "react";
+import { Fragment } from "react";
 const Skills = ({ id }) => {
   const skills = [
     {
@@ -6,44 +6,67 @@ const Skills = ({ id }) => {
         { title: "HTML", icon: "/assets/HTML.svg" },
         { title: "CSS", icon: "/assets/CSS.svg" },
         { title: "JS", icon: "/assets/JavaScript.svg" },
+        { title: "TS", icon: "/assets/Typescript.svg" },
         { title: "Sass", icon: "/assets/Sass.svg" },
-        { title: "React", icon: "/assets/React-Dark.svg" },
         { title: "Boostrap", icon: "/assets/Bootstrap.svg" },
         { title: "Tailwind", icon: "/assets/TailwindCSS-Dark.svg" },
         { title: "Mui", icon: "/assets/MaterialUI-Dark.svg" },
-
-      ],
-    },
-  ];
-  const backends = [
-    {
-      icons: [
+        { title: "React", icon: "/assets/React-Dark.svg" },
+        { title: "Vue", icon: "/assets/VueJS-Dark.svg" },
+        { title: "NextJS", icon: "/assets/NextJS-Dark.svg" },
+        { title: "Angular", icon: "/assets/Angular-Dark.svg" },
+        { title: "Redux", icon: "/assets/Redux.svg" },
+        { title: "JQuery", icon: "/assets/JQuery.svg" },
+        { title: "Vite", icon: "/assets/Vite-Dark.svg" },
+        { title: "Flutter", icon: "/assets/Flutter-Dark.svg" },
         { title: "Node JS", icon: "/assets/NodeJS-Dark.svg" },
         { title: "Express", icon: "/assets/ExpressJS-Dark.svg" },
+        { title: "Prisma", icon: "/assets/Prisma.svg" },
         { title: "MongoDB", icon: "/assets/MongoDB.svg" },
-
-
-
+        { title: "MySQL", icon: "/assets/MySQL-Dark.svg" },
+        { title: "Firebase", icon: "/assets/Firebase-Dark.svg" },
       ],
     },
   ];
-  const dnt = [
+  const programing_langs = [
     {
       icons: [
-        { title: "Git", icon: "/assets/Git.svg" },
-        { title: "Git Hub", icon: "/assets/Github-Dark.svg" },
-        { title: "Figma", icon: "/assets/Figma-Dark.svg" },
-
-
+        { title: "Java", icon: "/assets/Java-Dark.svg" },
+        { title: "Python", icon: "/assets/Python-Dark.svg" },
+        { title: "C", icon: "/assets/C.svg" },
+        { title: "C++", icon: "/assets/Cpp.svg" },
+        { title: "C#", icon: "/assets/CS.svg" },
+        { title: "GO", icon: "/assets/GoLang.svg" },
+        { title: "Dart", icon: "/assets/Dart-Dark.svg" },
+      ],
+    },
+  ];
+  const infrastructure = [
+    {
+      icons: [
+        { title: "Docker", icon: "/assets/Docker.svg" },
+        { title: "K8S", icon: "/assets/Kubernetes.svg" },
+        { title: "Github action", icon: "/assets/GithubActions-Dark.svg" },
+        { title: "Bash", icon: "/assets/Bash-Dark.svg" },
+        { title: "Cloudflare", icon: "/assets/Cloudflare-Dark.svg" },
+        { title: "GCP", icon: "/assets/GCP-Dark.svg" },
+        { title: "Azure", icon: "/assets/Azure-Dark.svg" },
+        { title: "Nginx", icon: "/assets/Nginx.svg" },
+        { title: "Linux", icon: "/assets/Linux-Dark.svg" },
       ],
     },
   ];
   const design = [
     {
       icons: [
+        { title: "Figma", icon: "/assets/Figma-Dark.svg" },
+        { title: "Git", icon: "/assets/Git.svg" },
+        { title: "Github", icon: "/assets/Github-Dark.svg" },
         { title: "Photoshop", icon: "/assets/Photoshop.svg" },
         { title: "Illustrator", icon: "/assets/Illustrator.svg" },
         { title: "Premire Pro", icon: "/assets/Premiere.svg" },
+        { title: "Vscode", icon: "/assets/VSCode-Dark.svg" },
+        { title: "AndroidStudio", icon: "/assets/AndroidStudio-Dark.svg" },
       ],
     },
   ];
@@ -57,7 +80,7 @@ const Skills = ({ id }) => {
                 <div className="rowfront">
                   {i.icons.map((s, i) => (
                     <div key={i}>
-                      <div className="column" >
+                      <div className="column">
                         {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon1"></img>
                         ) : (
@@ -145,19 +168,17 @@ const Skills = ({ id }) => {
       <Fragment>
         <div className="row">
           <div>
-            {dnt.map((i, index) => (
+            {infrastructure.map((i, index) => (
               <div key={index}>
                 <div className="row">
                   {i.icons.map((s, i) => (
-                    <div  key={i}>
+                    <div key={i}>
                       <div className="column">
-
                         {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon"></img>
                         ) : (
                           <i className={`${s.icon}`}></i>
                         )}
-
 
                         <p className="font">{s.title}</p>
                       </div>
@@ -241,12 +262,12 @@ const Skills = ({ id }) => {
       <Fragment>
         <div className="row">
           <div>
-            {backends.map((i, index) => (
+            {programing_langs.map((i, index) => (
               <div key={index}>
                 <div className="row">
                   {i.icons.map((s, i) => (
                     <div key={i}>
-                      <div className="column" >
+                      <div className="column">
                         {s.icon.substring(0, 1) == "/" ? (
                           <img src={`${s.icon}`} className="icon"></img>
                         ) : (
@@ -340,11 +361,7 @@ const Skills = ({ id }) => {
                 <div className="row">
                   {i.icons.map((s, i) => (
                     <div key={i}>
-                      <div
-                        className="column"
-                        
-                        style={{ margin: "15px" }}
-                      >
+                      <div className="column" style={{ margin: "15px" }}>
                         <img src={`${s.icon}`} className="icon"></img>
 
                         <p className="font">{s.title}</p>
