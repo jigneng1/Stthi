@@ -211,14 +211,13 @@ const Skills = ({ id }) => {
                 display: grid;
                 justify-content: center;
                 text-align:center
-                width: 100px;
                 align-items: center;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 justify-items: center;
               }
               .column {
                 margin: 20px;
-                // width:240px;
+                //width:240px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -360,8 +359,12 @@ const Skills = ({ id }) => {
                 <div className="rowfront">
                   {i.icons.map((s, i) => (
                     <div key={i}>
-                      <div className="column" style={{ margin: "15px" }}>
-                        <img src={`${s.icon}`} className="icon"></img>
+                      <div className="column">
+                        {s.icon.substring(0, 1) == "/" ? (
+                          <img src={`${s.icon}`} className="icon"></img>
+                        ) : (
+                          <i className={`${s.icon}`}></i>
+                        )}
 
                         <p className="font">{s.title}</p>
                       </div>
@@ -394,14 +397,13 @@ const Skills = ({ id }) => {
                 display: grid;
                 justify-content: center;
                 text-align:center
-                // width: 100px;
                 align-items: center;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 justify-items: center;
               }
               .column {
                 margin: 20px;
-                // width:240px;
+                //width:240px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
