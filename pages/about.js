@@ -104,16 +104,16 @@ const About = () => {
                   </div>
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
-                      <h3 style={{ color: "#C7D36F", margin: "0px" }}>
-                        Frontend
-                      </h3>
+                      {/* <h3 style={{ color: "#C7D36F", margin: "0px" }}>
+                        Software
+                      </h3> */}
                       <h3
                         style={{
                           marginLeft: "5px",
                           margin: "0px  0px 0px 5px",
                         }}
                       >
-                        Development
+                      Development
                       </h3>
                     </div>
                     <Skills id={"font"}></Skills>
@@ -121,16 +121,16 @@ const About = () => {
                   <br />
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
-                      <h3 style={{ color: "#C7D36F", margin: "0px" }}>
-                        Backend
-                      </h3>
+                      {/* <h3 style={{ color: "#C7D36F", margin: "0px" }}>
+                        Infrastructure
+                      </h3> */}
                       <h3
                         style={{
-                          marginLeft: "2px",
+                          marginLeft: "5px",
                           margin: "0px  0px 0px 5px",
                         }}
                       >
-                        Development
+                        Programing Languages
                       </h3>
                     </div>
                     <Skills id={"back"}></Skills>
@@ -138,16 +138,16 @@ const About = () => {
                   <br />
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
-                      <h3 style={{ color: "#C7D36F", margin: "0px" }}>
+                      {/* <h3 style={{ color: "#C7D36F", margin: "0px" }}>
                         Tools
-                      </h3>
+                      </h3> */}
                       <h3
                         style={{
                           marginLeft: "5px",
                           margin: "0px  0px 0px 5px",
                         }}
                       >
-                        Development
+                        Infrastructure
                       </h3>
                     </div>
                     <Skills id={"tools"} />
@@ -155,16 +155,16 @@ const About = () => {
                   <br />
                   <div className="card1">
                     <div className="row" style={{ paddingLeft: "20px" }}>
-                      <h3 style={{ color: "#C7D36F", margin: "0px" }}>
+                      {/* <h3 style={{ color: "#C7D36F", margin: "0px" }}>
                         Graphic
-                      </h3>
+                      </h3> */}
                       <h3
                         style={{
                           marginLeft: "5px",
                           margin: "0px  0px 0px 5px",
                         }}
                       >
-                        Skills
+                        Utilities
                       </h3>
                     </div>
                     <Skills id={"design"} />

@@ -46,7 +46,7 @@ const Skills = ({ id }) => {
       icons: [
         { title: "Docker", icon: "/assets/Docker.svg" },
         { title: "K8S", icon: "/assets/Kubernetes.svg" },
-        { title: "Github action", icon: "/assets/GithubActions-Dark.svg" },
+        { title: "Github Action", icon: "/assets/GithubActions-Dark.svg" },
         { title: "Bash", icon: "/assets/Bash-Dark.svg" },
         { title: "Cloudflare", icon: "/assets/Cloudflare-Dark.svg" },
         { title: "GCP", icon: "/assets/GCP-Dark.svg" },
@@ -170,7 +170,7 @@ const Skills = ({ id }) => {
           <div>
             {infrastructure.map((i, index) => (
               <div key={index}>
-                <div className="row">
+                <div className="rowfront">
                   {i.icons.map((s, i) => (
                     <div key={i}>
                       <div className="column">
@@ -211,7 +211,7 @@ const Skills = ({ id }) => {
                 display: grid;
                 justify-content: center;
                 text-align:center
-                // width: 100px;
+                width: 100px;
                 align-items: center;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 justify-items: center;
@@ -264,7 +264,7 @@ const Skills = ({ id }) => {
           <div>
             {programing_langs.map((i, index) => (
               <div key={index}>
-                <div className="row">
+                <div className="rowfront">
                   {i.icons.map((s, i) => (
                     <div key={i}>
                       <div className="column">
@@ -358,7 +358,7 @@ const Skills = ({ id }) => {
           <div>
             {design.map((i, index) => (
               <div key={index}>
-                <div className="row">
+                <div className="rowfront">
                   {i.icons.map((s, i) => (
                     <div key={i}>
                       <div className="column" style={{ margin: "15px" }}>
