@@ -305,14 +305,13 @@ const Skills = ({ id }) => {
                 display: grid;
                 justify-content: center;
                 text-align:center
-                // width: 100px;
                 align-items: center;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 justify-items: center;
               }
               .column {
                 margin: 20px;
-                // width:240px;
+                //width:240px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
