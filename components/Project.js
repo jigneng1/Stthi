@@ -2,39 +2,73 @@ import Link from "next/link";
 import React, { Fragment } from "react";
 function Project() {
   const data = [
+    // {
+    //   id: 1,
+    //   intro: "graphic design & developer",
+    //   content:
+    //     "A project that allows students to research and study to create services on a given topic, the 2021 topic is Homework Services.",
+    //   title: "🥇 SIT playground",
+    //   year: "2021",
+    //   img: "/assets/award/playground.png",
+    //   link:""
+    // },
+    // {
+    //   id: 2,
+    //   intro: "graphic design",
+    //   content:
+    //     "a volunteer project of the SIT faculty. I am in a design position to jointly make stories for the Foundation for the Blind.",
+    //   title: "SIT Volunteer 2021",
+    //   year: "2021",
+    //   img: "/assets/award/Sit vorunteer.jpg",
+    //   link:""
+    // },
     {
       id: 1,
-      intro: "graphic design & consulting",
-      content:
-        "A project that allows students to research and study to create services on a given topic, the 2021 topic is Homework Services.",
-      title: "🥇 SIT playground",
-      year: "2021",
-      img: "/assets/award/playground.png",
-      front: "",
-      back: "",
-      socket: "",
-      db: "",
-      link: "experiences/playground",
-      css: "",
-      site: "",
-      github: "",
+      intro: "Frontend Developer",
+      content: "My own portfolio website",
+      title: "Stthi Portfolio",
+      year: "2022",
+      link: "https://github.com/jigneng1/Stthi",
     },
     {
       id: 2,
-      intro: "graphic design",
-      content:
-        "a volunteer project of the SIT faculty. I am in a design position to jointly make stories for the Foundation for the Blind.",
-      title: "SIT Volunteer 2021",
-      year: "2021",
-      img: "/assets/award/Sit vorunteer.jpg",
-      front: "",
-      back: "",
-      socket: "",
-      db: "",
-      link: "",
-      css: "",
-      site: "",
-      github: "",
+      intro: "Fullstack Developer",
+      content: "Web application service that can create shorten url",
+      title: "Stthi Shortener",
+      year: "2023",
+      link: "https://github.com/jigneng1/ShortLink",
+    },
+    {
+      id: 3,
+      intro: "Fullstack Developer",
+      content: "Social Application for KMUTT students",
+      title: "Modlife",
+      year: "2023",
+      link: "https://github.com/CSSIT22/studentlife",
+    },
+    {
+      id: 4,
+      intro: "Fullstack Developer",
+      content: "Web aplication for CS firstdate 202",
+      title: "DeteactiveXXIII",
+      year: "2023",
+      link: "https://github.com/ThisTine/detectiveXXIII-frontend",
+    },
+    {
+      id: 5,
+      intro: "Project Manager & Fullstack",
+      content: "Application to join event with the same interesting",
+      title: "TungTee",
+      year: "2023",
+      link: "https://github.com/jigneng1/TungTee",
+    },
+    {
+      id: 6,
+      intro: "Devops Developer",
+      content: "Mobile Application to solve the foodwaste problem",
+      title: "TungLuea",
+      year: "2023",
+      link: "https://github.com/sorasora46/Tungleua",
     },
   ];
   return (
@@ -44,14 +78,13 @@ function Project() {
           <div key={item.id}>
             <div className="row">
               <div className="container">
-                <img
+                {/* <img
                   src={item.img}
                   style={{ width: "320px", borderRadius: "32px" }}
-                ></img>
+                ></img> */}
 
                 <h3 className="font">{item.title}</h3>
                 <p>{item.year}</p>
-
                 <br />
                 <div className="hoverdiv">
                   <div className="content">
@@ -61,6 +94,7 @@ function Project() {
                     <p>{item.content}</p>
                   </div>
 
+                  {/* {handleLinkButton(item.link)} */}
                   <Link href={item.link}>
                     <button className="button">
                       <span
@@ -120,12 +154,15 @@ function Project() {
         }
         .container {
           width: 320px;
-          height: 350px;
+          height: 250px;
           box-shadow: 3px 3px 5px 3px #ccc;
           margin: 20px;
           border-radius: 32px;
           transform: scale(1);
           transition: all 0.3s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
         .hoverdiv {
           position: absolute;
@@ -153,6 +190,10 @@ function Project() {
           display: flex;
           justify-content: center;
           flex-direction: row;
+        }
+        .tech{
+          boder:solid 10px  #c7d36f
+          margin: 10px 10px
         }
       `}</style>
     </Fragment>
