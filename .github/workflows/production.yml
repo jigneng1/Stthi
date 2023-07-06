@@ -60,5 +60,5 @@ jobs:
                       docker pull ${{secrets.DOCKER_REGISTRY}}/${{secrets.DOCKER_IMAGE}}:latest
                       docker stop ${{secrets.CONTAINER_NAME}}
                       docker rm ${{secrets.CONTAINER_NAME}}
-                      docker run -d --name ${{secrets.CONTAINER_NAME}} -p ${{secrets.DOCKER_PORT}} : 3000 ${{secrets.DOCKER_IMAGE}} 
+                      docker run -d --name ${{secrets.CONTAINER_NAME}} -p ${{secrets.DOCKER_PORT}} : 3000 ${{secrets.DOCKER_REGISTRY}}/${{secrets.DOCKER_IMAGE}}:latest 
                       docker system prune -af
