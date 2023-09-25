@@ -3,11 +3,9 @@ const Footer = () => {
   return (
     <Fragment>
       <div className="box">
-        <div className="content">
-         {`All right reserved © by "Sitiporn Wimolpunyakul"`}
-        </div>
+        <div className="content">{`All right reserved © by "Neng"`}</div>
       </div>
-      
+
       <style jsx>{`
         .box {
           height: 10vh;
