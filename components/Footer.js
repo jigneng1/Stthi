@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <Fragment>
       <div className="box">
-        <div className="content">{`All right reserved © by "Sitiporn Wimolpunyakul"`}</div>
+        <div className="content">{`All right reserved © by "Neng Sitiporn"`}</div>
       </div>
 
       <style jsx>{`
